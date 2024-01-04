@@ -1,6 +1,12 @@
 NLinear라는 시계열 딥러닝 모델
 
 2024-01-04
+오늘 다운로드한 것
+- 우분투
+- 소울트리
+- 깃
+- VSCODE.feat WSL, Material Icon Theme
+- 
 ## Devops란?.feat 현직 이야기
 현직에가면 알아야
 뭔가 만들되고 배포되기까지 너무 오래걸림
@@ -49,7 +55,7 @@ GIT을 해보게될텐데 버전관리하고 그런건 지금 당장은 안할�
 환경 다 구성한걸 이미지로 만듬
 그 이미지를 불러와서 클릭하면 실행하기만 하면 됌
 디폴트 스위치 ->
-## git 시
+## git 시작작
 git 다운
 git bash - window 터미널
 git bash란?
@@ -76,3 +82,79 @@ git은 아주 중요한 자산
 그래서 서버를 외부로 할듯
 ### 설치
 건너뛰기 -> 머큐리얼 체크끄기 -> 이메일, 이름
+## WINDOW와 LINUX의 관계
+window가 linux를 품게됌 엄청 큰 사건
+os안에는 kernel을 포함(kernel은 모든 핵심기능 보유)
+커널 윗단에서는 리눅스 커널(WSL)이 브릿지역할을함 커널간의
+**즉, WSL은 윈도우에 통합되어있는 리눅스 커널이다**
+#### Ubuntu 20.4
+git bash처럼 작업환경이 아니라 리눅스 커널이 들어가 있음
+우분투를 깔면 컴퓨터를 하나 더 장만하는 셈
+
+윈도우와 많이 통합이 되어있다 현재 리눅스는
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/218136a9-cb03-48d1-aaf5-0f77a0358bf2)
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/3e54f5f2-7c11-4461-9b86-06cd07e6438b)
+
+커널 명령어가 바뀜
+셸은 명령어가 바뀌는 것 뿐만 아니라 스크립트도 바뀜 즉, OS 컨트롤 가능
+리눅스 배포판 엄청 많은데 일단 두가지만 기억하자(우분투, 레드햇)
+우리들의 초기 목표
+- 우분투 배포해서 편집
+- 커널 잘사용하기
+배포판이 매우많음
+지금까지 한것
+WSL기반으로 우분투를 설치한것임
+## 지금부터 깃을 다뤄보겠다.
+
+<br/>` git config --global user.name "barabonda"`
+<br/>` git config --global user.email "skydlalsdn2@gmail.com"`
+<br/>` git config --global init.defaultBranch main`
+<br/>'git config --global --list'
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/6245576d-e088-4d27-b8f0-ab93735e425c)
+
+로컬저장소에서 원격저장소로 일부만 커밋했을 올라간다<br/>
+즉, 깃허브에 올라간것만 다른 사람에 영향이 간다.
+
+비주얼 스튜디오는 기능이 많아서 사람들 많이 쓴다.
+
+---
+우선 순위를 두거라
+1. AI 프로젝트, MLOps
+2. 다른 기술
+---
+
+맥은 UNIX 계열
+안드는 linux 계열<br/>
+잡스<br/>
+apple(os) -> next -> apple(mac os)<br/>
+next->iosi<br/>
+리눅스 개발한 사람이 리눅스 버전관리를 위해 bitkeeper사용하려다가 실패해서 독자적으로 만든게 GIT<br/>
+
+git source code
+https://github.com/git/git/tree/e83c5163316f89bfbde7d9ab23ca2e25604af290
+소스코드 발견하는 툴은 사실상 표준처럼 git이 쓰임<br/>
+이제는 인프라운영하는 사람들도 씀<br/>
+### Version Control System(VCS)
+이런 툴없이 통합 겁나 힘들것<br/>
+git에서는 어떤 작업을 추적, 복원 할 수 있음<br/>
+사람과 대화, 컴퓨터와 대화 계속 번갈아하다보면 힘들고 관리힘듬 그걸 자동화 해주는 것이 git<br/>
+
+U는 언트랙트 git이 관리하고있지않다는 
+```2022-PC(T)-10@DESKTOP-5417C59 MINGW64 /c/src/hello (main)
+$ git add lions.yaml
+
+2022-PC(T)-10@DESKTOP-5417C59 MINGW64 /c/src/hello (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   lions.yaml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tigers.yaml
+```
+
