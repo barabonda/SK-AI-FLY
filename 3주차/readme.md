@@ -170,3 +170,112 @@ Branch: 분기된 가지 (다른 차원)
 `git switch -c new-teams` #브랜치 생성, 변경 같이 됌
 
 간단한 플라스크 예제 우분투환경에서 해볼듯 앞으
+```barabonda@barabonda-Virtual-Machine:~$ sudo add-apt-repository sudo apt-get update
+[sudo] password for barabonda: 
+Error: need a single repository as argument
+barabonda@barabonda-Virtual-Machine:~$ sudo apt-get install git -y
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb cryptsetup-bin dctrl-tools dmeventd dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 libaio1 libdebian-installer4
+  libdevmapper-event1.02.1 liblvm2cmd2.03 libreadline5 libtimezonemap-data
+  libtimezonemap1 lvm2 python3-icu python3-pam rdate thin-provisioning-tools
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 111 not upgraded.
+Need to get 5,518 kB of archives.
+After this operation, 38.7 MB of additional disk space will be used.
+Get:1 http://mirror.kakao.com/ubuntu focal/main amd64 liberror-perl all 0.17029-1 [26.5 kB]
+Get:2 http://mirror.kakao.com/ubuntu focal-updates/main amd64 git-man all 1:2.25.1-1ubuntu3.11 [887 kB]
+Get:3 http://mirror.kakao.com/ubuntu focal-updates/main amd64 git amd64 1:2.25.1-1ubuntu3.11 [4,605 kB]
+Fetched 5,518 kB in 1s (6,889 kB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... 139466 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17029-1_all.deb ...
+Unpacking liberror-perl (0.17029-1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.25.1-1ubuntu3.11_all.deb ...
+Unpacking git-man (1:2.25.1-1ubuntu3.11) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.25.1-1ubuntu3.11_amd64.deb ...
+Unpacking git (1:2.25.1-1ubuntu3.11) ...
+Setting up liberror-perl (0.17029-1) ...
+Setting up git-man (1:2.25.1-1ubuntu3.11) ...
+Setting up git (1:2.25.1-1ubuntu3.11) ...
+Processing triggers for man-db (2.9.1-1) ...
+barabonda@barabonda-Virtual-Machine:~$ git --version
+git version 2.25.1
+barabonda@barabonda-Virtual-Machine:~$ sudo apt-get install git -y 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+git is already the newest version (1:2.25.1-1ubuntu3.11).
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb cryptsetup-bin dctrl-tools dmeventd dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 libaio1 libdebian-installer4
+  libdevmapper-event1.02.1 liblvm2cmd2.03 libreadline5 libtimezonemap-data
+  libtimezonemap1 lvm2 python3-icu python3-pam rdate thin-provisioning-tools
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 111 not upgraded.
+barabonda@barabonda-Virtual-Machine:~$ git --version
+git version 2.25.1
+barabonda@barabonda-Virtual-Machine:~$ sudo apt-get update
+Hit:1 http://mirror.kakao.com/ubuntu focal InRelease                           
+Hit:2 http://mirror.kakao.com/ubuntu focal-updates InRelease                   
+Hit:3 http://mirror.kakao.com/ubuntu focal-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Reading package lists... Done
+barabonda@barabonda-Virtual-Machine:~$ sudo add-apt-repository ppa:git-core/ppa -y
+Hit:1 http://mirror.kakao.com/ubuntu focal InRelease                    
+Hit:2 http://mirror.kakao.com/ubuntu focal-updates InRelease            
+Hit:3 http://mirror.kakao.com/ubuntu focal-backports InRelease          
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease               
+Get:5 http://ppa.launchpad.net/git-core/ppa/ubuntu focal InRelease [23.8 kB]   
+Get:6 http://ppa.launchpad.net/git-core/ppa/ubuntu focal/main amd64 Packages [3,012 B]
+Get:7 http://ppa.launchpad.net/git-core/ppa/ubuntu focal/main Translation-en [2,252 B]
+Fetched 29.1 kB in 2s (19.4 kB/s)         
+Reading package lists... Done
+barabonda@barabonda-Virtual-Machine:~$ sudo apt-get install git -y
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb cryptsetup-bin dctrl-tools dmeventd dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 libaio1 libdebian-installer4
+  libdevmapper-event1.02.1 liblvm2cmd2.03 libreadline5 libtimezonemap-data
+  libtimezonemap1 lvm2 python3-icu python3-pam rdate thin-provisioning-tools
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  git-man
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
+  git-cvs git-mediawiki git-svn
+The following packages will be upgraded:
+  git git-man
+2 upgraded, 0 newly installed, 0 to remove and 111 not upgraded.
+Need to get 9,635 kB of archives.
+After this operation, 11.1 MB of additional disk space will be used.
+Get:1 http://ppa.launchpad.net/git-core/ppa/ubuntu focal/main amd64 git amd64 1:2.43.0-0ppa1~ubuntu20.04.1 [7,488 kB]
+Get:2 http://ppa.launchpad.net/git-core/ppa/ubuntu focal/main amd64 git-man all 1:2.43.0-0ppa1~ubuntu20.04.1 [2,147 kB]
+Fetched 9,635 kB in 3s (3,175 kB/s)
+(Reading database ... 140401 files and directories currently installed.)
+Preparing to unpack .../git_1%3a2.43.0-0ppa1~ubuntu20.04.1_amd64.deb ...
+Unpacking git (1:2.43.0-0ppa1~ubuntu20.04.1) over (1:2.25.1-1ubuntu3.11) ...
+Preparing to unpack .../git-man_1%3a2.43.0-0ppa1~ubuntu20.04.1_all.deb ...
+Unpacking git-man (1:2.43.0-0ppa1~ubuntu20.04.1) over (1:2.25.1-1ubuntu3.11) ...
+Setting up git-man (1:2.43.0-0ppa1~ubuntu20.04.1) ...
+Setting up git (1:2.43.0-0ppa1~ubuntu20.04.1) ...
+Processing triggers for man-db (2.9.1-1) ...
+barabonda@barabonda-Virtual-Machine:~$ git --version
+git version 2.43.0
+barabonda@barabonda-Virtual-Machine:~$ 
+
+```
