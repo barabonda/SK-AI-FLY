@@ -141,6 +141,9 @@ git에서는 어떤 작업을 추적, 복원 할 수 있음<br/>
 
 U는 언트랙트 git이 관리하고있지않다는 
 ```2022-PC(T)-10@DESKTOP-5417C59 MINGW64 /c/src/hello (main)
+
+EC2나 리눅스에 뭔가 딱만드렁ㅆ다 그러면 패키지 업데이트해야함
+
 $ git add lions.yaml
 
 2022-PC(T)-10@DESKTOP-5417C59 MINGW64 /c/src/hello (main)
@@ -160,5 +163,10 @@ Untracked files:
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/572d3b55-48ac-42c3-b598-86adb177674b)
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/b622614e-b808-4f1a-8a17-567c59045bca)
 
+## GIT 실습 4 (Branch)
+Branch: 분기된 가지 (다른 차원)
+`git branch add-coach` #브랜치 생성
+`git switch add-coach` #브랜치 변경
+`git switch -c new-teams` #브랜치 생성, 변경 같이 됌
 
-
+간단한 플라스크 예제 우분투환경에서 해볼듯 앞으
