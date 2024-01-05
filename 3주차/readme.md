@@ -291,4 +291,76 @@ github action에 뭘 만들어놓으면 컨테이너에 올리고
 2. 차트에 문제있으면 해결
 3. 하드웨어가 비정상적으로 과부하되고있으면 알람을 걸어서 알람이 오도록 할 수 있음(Slack 같은)
 4. 당직이 아닐때 본인 part에 문제가 생기면 쉬다가도 처리
-5. 
+
+## CI(Continuous Integraion)  
+지속적 통합  
+programmer -> merge -> QA -> Deployment  
+도커저장소에 컨테이미지를 만들어서 올리는 정도  
+그거가지고 테스트/배포 azure로 배포  
+고정도만해도 내가 편함  
+
+개발자들은 좀 익숙해지면 프로젝트를 다양하게 함 오픈소스에 기여를 한다거나 ex) 한글화 
+
+이것도 툴 굉장히 많음
+
+## CD(Continuous Delivery Deploy)  
+지속적 배포  
+버전관리, 빌드/테스트, 검정, 배포 등등  
+이것도 툴 엄청 많음  
+
+Git hub -> Jenkins(실무 때 한번 써보길)  
+
+
+# git hub action  
+yaml json  
+json을 사람의 눈으로 바꾼 것이 yaml(야믈)파일
+들여쓰기 잘해야
+
+python application
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/beb0e8af-5a5a-47d5-8978-8d5f55fe6680)
+main에 push가 일어나면 아래의 이벤트가 일어날 수 있음  
+job 밑에<br/>
+build -> deploy
+build의 run-0n 즉 컴퓨터가 생길때마다 뭘할 수 있(?)  
+```
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+```
+우분투에서 pull  
+이것을  
+```
+name: Python application
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.8"
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
+```
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/8a706676-4fee-4231-9843-512e57e97640)
+
+도커를 만들어보았다 ㄷㄷ  
+
+
+
+
+이렇게 변경
