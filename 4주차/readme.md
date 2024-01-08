@@ -25,7 +25,7 @@ Goal
   return(value) 을 예측하도록 학습
 
   ## DQN 코드 이해
-  Q: 왜 2개의 모델을 적용해야하는가?
+  Q: 왜 2개의 모델을 적용해야하는가?<br/>
   Q: Target-value?, Q - value?<br/>
   Q:histroy?<br/>
   Q: error는 어떻게 해결하는<br/>
