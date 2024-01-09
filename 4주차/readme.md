@@ -80,3 +80,21 @@ gradient 함수업데이트 api 차이?]==<br/>
 주식 평균                                                                                                                                                                                     
 Q러닝은 에피소드에 있는 액션이 아니라 액션그리디하게
 나머지는 아무거입극가 사용 맥시멈 Qvalu
+
+history(이전의 정) 컨텍스트 만 기억해도 강화학습에 대한
+SARSA
+웨이트 업뎃
+리플렛버퍼
+더블 큐러닝 자체는 오래됌
+그걸 적용한 것이 16년도
+H.Hasselt et al, Deep Reinforcement Learning with Double Q-learning AAAI| 2016
+prioritized Experience Replay
+**노하우가 중요**
+key idea만 구현해서는 성능이 안나
+sampling 이라던가 noise라던가  
+이런 trick들이 적절하게 사용되야지만 성능이 나옴 튜닝테크닉과 트릭같은것이 없나!!  
+커스텀 짐환경 만들고 로딩 액션을 반복적으로 호출하면서 골을 추출
+달착륙선의 착지 조정법을 학습                    
+                                       
+atari  breakout
+리니어모델 3개로 입력받고 출력 모델 4개
