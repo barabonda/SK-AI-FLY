@@ -98,3 +98,5 @@ sampling 이라던가 noise라던가
                                        
 atari  breakout
 리니어모델 3개로 입력받고 출력 모델 4개
+process
+이미지를 cga뭐시기 하면 됌
