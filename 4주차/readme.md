@@ -213,3 +213,5 @@ docker images
 # busybox, ubuntu 가 있는 것을 확인하실 수 있습니다. 
 
 docker rmi ubuntu 
+시니어가 이쁘게 이미지를 만들고 그걸 레포지토리에 배포하면 팀원들이 다운받아서 다 같은 환경에서 작업할 수 있음
+
