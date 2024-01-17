@@ -110,3 +110,5 @@ vmss(가상머신 확장 집합)
 7. 벡엔드풀 등록
 8. 회람규칙
 9. 정적인 private로 변환시키고 정상적인 부하분산이 일어나면 끝난것임. 
+
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/895b160f-f054-402d-9111-fac53d52bfc8)
