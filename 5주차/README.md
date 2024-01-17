@@ -141,7 +141,8 @@ app service 계획 크기 조정
 몇초 지나서 만들어졌다!!
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/b488e6a1-798e-44a0-bac8-c764ed5dab04)
 휴대폰에서 웹앱으로 만들어지고 했다!!
-![Uploading image.png…]()
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/492f96e1-153b-43ed-b4be-4905557500ff)
+
 
 
 
