@@ -136,11 +136,11 @@ app service 계획 크기 조정
 
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/e7e28b64-cc1b-4886-9033-063c64018240)
 ## github와 azure와 연동하여 배포하기
-곧 만들어질거라고 축하까지 해주는 azure...ㅋㅋㅋ
+## 곧 만들어질거라고 축하까지 해주는 azure...ㅋㅋㅋ
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/891472a2-9cb4-4c46-b67c-4d114e08ea8f)  
-몇초 지나서 만들어졌다!!
+## 몇초 지나서 만들어졌다!!
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/b488e6a1-798e-44a0-bac8-c764ed5dab04)
-휴대폰에서 웹앱으로 만들어지고 했다!!
+## 휴대폰에서 웹앱으로 만들어지고 했다!!
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/492f96e1-153b-43ed-b4be-4905557500ff)
 
 
