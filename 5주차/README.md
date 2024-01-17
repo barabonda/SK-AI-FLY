@@ -134,3 +134,5 @@ app service 계획 크기 조정
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/ffa2c681-e966-4b9b-bfea-456e270ce45c)
 ## 정적 webapp 만들기  
 
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/e7e28b64-cc1b-4886-9033-063c64018240)
+
