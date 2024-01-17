@@ -92,3 +92,7 @@ windows 10
   선택하는 네트워크  
 
     가상머신
+## 부하분산
+확장스크랩트 설치
+
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/05eeb9dd-d6e8-49c5-be06-d3abeff70f68)
