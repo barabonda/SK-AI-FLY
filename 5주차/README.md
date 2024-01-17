@@ -109,7 +109,11 @@ windows 10
 6. 외부 public 내부 private
 7. 벡엔드풀 등록
 9. 회람규칙
-10. 정적인 private로 변환시키고 정상적인 부하분산이 일어나면 끝난것임. 
+
+paas  
+## Azure app service  
+
+11. 정적인 private로 변환시키고 정상적인 부하분산이 일어나면 끝난것임. 
 vmss(가상머신 확장 집합)
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/895b160f-f054-402d-9111-fac53d52bfc8)
 vmss에서 특정 인스턴트에 접근하려면 포트를 맞춰야함
