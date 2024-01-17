@@ -117,3 +117,20 @@ paas
 vmss(가상머신 확장 집합)
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/895b160f-f054-402d-9111-fac53d52bfc8)
 vmss에서 특정 인스턴트에 접근하려면 포트를 맞춰야함
+
+app service 계획 크기 조정  
+매트릭에 따라 스케일링 (CPU 백분율, 메모리 백분율, HTTP 요청)  
+일정에 따라 크기 조정(평일, 주말, 시간, 공휴일)   
+  
+  
+# app service 만들기  
+웹앱 3개만들고 traffic 매니저 지원해주는거 만들어주고
+생성하고 그 웹앱가지고 노드벨러싱할수있
+
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/76f64947-c380-4675-ba80-fed77122071c)
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/d01fd75d-115b-421c-b70c-6767a9f93108)
+만들어보았다.!
+
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/ffa2c681-e966-4b9b-bfea-456e270ce45c)
+## 정적 webapp 만들기  
+
