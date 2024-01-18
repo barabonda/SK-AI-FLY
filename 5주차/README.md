@@ -181,4 +181,5 @@ https://docs.docker.com/engine/install/ubuntu/
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/392041dc-6bdc-46a9-b474-fa03d93eb5d8)
 ## 그 후 공인 ip를 넣어보면 Welcome to nginx!라며 연결성공했다고 해준다
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/31acdd4f-8240-4915-bf24-d36c6937acce)
+데이터베이스, 컨테이너  
 
