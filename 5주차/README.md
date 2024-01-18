@@ -183,7 +183,7 @@ https://docs.docker.com/engine/install/ubuntu/
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/31acdd4f-8240-4915-bf24-d36c6937acce)
 데이터베이스, 컨테이너  
 
-
+database 검색
 ```
 # database = client.get_database_client(DATABASE_NAME)
 
@@ -206,3 +206,21 @@ discontinued_items = container.query_items(
 for item in discontinued_items:
     print(json.dumps(item, indent = True))
 ```
+이 코드는 Python의 SQL API를 사용하여 Azure Cosmos DB에서 항목을 쿼리하기 위한 것입니다. 특정 productModel값( 'Model7')을 갖는 모든 제품을 검색합니다. 코드가 수행하는 작업에 대한 분석은 다음과 같습니다.
+
+쿼리 실행 : container.query_itemsCosmos DB 컨테이너의 항목을 쿼리하는 데 사용됩니다. 쿼리는 SQL과 유사한 구문으로 지정됩니다.
+
+쿼리 정의 :
+
+SELECT * FROM products p에 대한 별칭으로 컬렉션 *에서 모든 필드( )를 선택하도록 데이터베이스에 지시합니다 .productspproducts
+WHERE p.productModel = @modelproductModel필드가 동일한 항목만 포함하도록 결과를 필터링합니다 'Model7'.
+매개변수 :
+
+인수 parameters는 쿼리에 사용되는 매개변수를 정의하는 사전 목록입니다. @model이 경우 값이 인 매개변수 하나가 있습니다 'Model7'.
+파티션 간 쿼리 :
+
+enable_cross_partition_query=TrueCosmos DB 컨테이너가 분할된 경우 쿼리가 여러 파티션에 걸쳐 있을 수 있습니다.
+결과 반복 및 인쇄 :
+
+루프 for는 결과( discontinued_items)를 반복합니다.
+json.dumps(item, indent=True)가독성을 위해 각 항목을 적절한 형식의 JSON 문자열로 변환합니다.
