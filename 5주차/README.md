@@ -146,6 +146,20 @@ app service 계획 크기 조정
 ## 휴대폰에서도 반응형 웹앱으로 잘돌아간다!!
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/492f96e1-153b-43ed-b4be-4905557500ff)
 
+2024.01.18
+## 배포 슬
+1. 웹앱만들기
+2. 로컬 git 리포지토리 이용 git 배포 구성
+3. git 클라이언트 구성 및 웹앱 소스코드 복제
+4. production 슬롯에 앱을 배포하도록 git remote 구성
+5. 새 staging 슬롯 만들기
+6. 새 staging 슬롯에 git 배포 구성
+7. Staging 슬롯에 앱을 배포하도록 git remote 구성
+8. 앱 소스코드 수정 및 staging 슬롯에 배포
+9. 슬롯 설정 구성 및 교환
+정형화 되면
+rdb, sql, 오라클
 
-
+비정형
+몽고db - node.js
 
