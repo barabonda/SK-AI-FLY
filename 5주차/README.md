@@ -163,3 +163,9 @@ rdb, sql, 오라클
 비정형
 몽고db - node.js
 
+# docker azure 서버 연결  
+```
+ssh -i "C:\Users\2022-PC(T)-10\Downloads\lmwi_key.pem" azureuser@52.175.32.90
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+```
