@@ -179,3 +179,6 @@ https://docs.docker.com/engine/install/ubuntu/
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/140c4319-c116-4200-8aff-e1a1bd0e64fa)
 *현재는 22번 포트만 연결되고 80포트는 막아 놓은 상태 따라서 인바운드 규칙에 80 포트를 추가시켜준다.
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/392041dc-6bdc-46a9-b474-fa03d93eb5d8)
+## 그 후 공인 ip를 넣어보면 Welcome to nginx!라며 연결성공했다고 해준다
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/31acdd4f-8240-4915-bf24-d36c6937acce)
+
