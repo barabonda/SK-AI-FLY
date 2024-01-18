@@ -183,3 +183,26 @@ https://docs.docker.com/engine/install/ubuntu/
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/31acdd4f-8240-4915-bf24-d36c6937acce)
 데이터베이스, 컨테이너  
 
+
+```
+# database = client.get_database_client(DATABASE_NAME)
+
+# CONTAINER_NAME = 'product'
+
+# container = database.get_container_client(CONTAINER_NAME)
+
+# import json
+# for item in container.query_items(
+#     query = 'SELECT*FROM mycontainer r WHERE r.id="idem3',
+#     enable_cross_partition_query=True):
+#     print(json.dumps(item, indent=True))
+discontinued_items = container.query_items(
+    query = 'SELECT*FROM products p WHERE p.productModel = @model',
+    parameters = [
+        dict(name = '@model', value = 'Model7')
+    ],
+    enable_cross_partition_query=True
+)
+for item in discontinued_items:
+    print(json.dumps(item, indent = True))
+```
