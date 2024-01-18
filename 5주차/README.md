@@ -169,3 +169,13 @@ ssh -i "C:\Users\2022-PC(T)-10\Downloads\lmwi_key.pem" azureuser@52.175.32.90
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 ```
+https://docs.docker.com/engine/install/ubuntu/
+공식문서를 보고  
+`sudo systemctl status docker`
+까지 쳐서  
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/522783d0-75aa-4557-a68b-8a2308facbe8)  
+도커가 활성화된 것을 보았다.
+## 컨테이너 생
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/140c4319-c116-4200-8aff-e1a1bd0e64fa)
+*현재는 22번 포트만 연결되고 80포트는 막아 놓은 상태 따라서 인바운드 규칙에 80 포트를 추가시켜준다.
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/392041dc-6bdc-46a9-b474-fa03d93eb5d8)
