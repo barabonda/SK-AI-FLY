@@ -270,4 +270,6 @@ else:
 ```
 ### 파이썬 코드로 디비를 업뎃하면 azure에도 업뎃되는것을 볼수가있다
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/e230de18-ba05-4246-884c-bb9a6ebf3b26)
+# azure Ml studio를 이용한 TTS
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/13346649-2759-492c-afdf-97019d77e041)
 
