@@ -224,3 +224,50 @@ enable_cross_partition_query=TrueCosmos DB 컨테이너가 분할된 경우 쿼�
 
 루프 for는 결과( discontinued_items)를 반복합니다.
 json.dumps(item, indent=True)가독성을 위해 각 항목을 적절한 형식의 JSON 문자열로 변환합니다.
+2024.01.19  
+# mongo db와 azure의 연동
+```
+import os
+import sys
+from random import randint
+
+import pymongo
+from dotenv import load_dotenv
+
+load_dotenv()
+CONNECTION_STRING = os.environ.get('COSMOS_CONNECTION_STRING')
+DB_NAME = "products"
+COLECTID = pymongo
+COLLECTION_NAME = "books"
+client = pymongo.MongoClient(CONNECTION_STRING)
+
+db = client[DB_NAME]
+collection = db[COLLECTION_NAMEQ]
+book = {
+    "category":"Computers, Technology",
+    "name": "MonogoDB The Definitive Guide",
+    "quantiy": 2,
+    "sale":False
+},
+result = collection.insert_many(book)
+print("추가된 문서_id : {}\n".format(result.inserted_ids[0]))
+if DB_NAME not in client.list_database_names():
+    #DB 컬렉션에서 공유할 수 있는 400RU 처리량의 데이터베이스 생성
+    db.command({"customAction": "CreateDatabase", "offerThroughput": 400})
+    print("생성된 db : '{}'\n".format(DB_NAME))
+else:
+    print("db 사용:'{}'.\n".format(DB_NAME))
+
+#컬렉션
+collection = db[COLLECTION_NAME]
+if COLLECTION_NAME not in db.list_collection_names():
+    db.command(
+        {"customAction": "CreateCollection", "collection": COLLECTION_NAME}
+    )
+    print("생성된 컬렉션(collection) '{}'.\n".format(COLLECTION_NAME))
+else:
+    print("컬렉션(collection) 사용: '{}'.\n".format(COLLECTION_NAME))
+```
+### 파이썬 코드로 디비를 업뎃하면 azure에도 업뎃되는것을 볼수가있다
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/e230de18-ba05-4246-884c-bb9a6ebf3b26)
+
