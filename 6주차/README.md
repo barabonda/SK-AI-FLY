@@ -66,31 +66,7 @@ maxpool2d는 보통 2이다
 stride를 늘리면 패딩사이즈가 확줄음
 
 ### VGG-NET  
-합성곱을 많이씀  
-진정한 딥러  
-
-이미지 전체를 받아서 넣는다 피쳐맵에서 뽑느다
-왜? 너무 많아서 피쳐맵으로 뽑는것이 좋음
-CCNN 양방향 풀리커넥티드 한쪽에서는 있냐 없냐 한쪽에서는 좌표를 
-그리드를 만들어서 각점으로 16개나 4개를 만들어서 
-
-yolo는 한층에서만 했지만 신뢰도도 평가야하여 보완함
-
-정확도는 faster r-cnn 속도는 yolo
-# transformer 
-인코더 디코더 둘다 존재  
-인코더의 경우 self-attention 사용
-트랜스포머는 입력되는 문장을 순차적으로 처리하지않고 병렬로 한번에 처리  
-때문에 단어 정보와 위치정보를 합해서 처
-![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/6ffd68e8-9f01-4ce8-8584-ec3ed375c68c)
-![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/78ea0a36-a194-4df3-b853-793cdcf69e54)  
-gpt는 한단어 한단어 내뱉음  
-때문에 내뱉은 단어가 다시 input되고  
-cross-attention 번역 시작
-a, b, c가 있을 때
-b에 대한 a,c 학습 c에 대한 a,b 학습 3개의 연관성 a,b,c 학습
-각 단어와 다른 단어들의 연관성을 끊어서 생각
-학습을 함 그렇기 때문에 a,b,c에 대한 연관성을 알게됌  
+합성곱을 음  
 그렇기 때문에 gpt는 디코더만 쓰고 
 디코더만 쓰는게 대세가 됌 
 cross-attention은 번역에 쓰임
