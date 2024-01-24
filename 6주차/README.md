@@ -99,4 +99,15 @@ gpt가 번역하는 거는
 그러므로 cross-attention이 아니라 self-attention많으로 번역 등등 많은 것들을 수행하는 것임  
 vision 트랜스포머  
 속도와 양을 
-vivit
+vivit  
+# opencv  
+인텔에서 만든 라이브러리  
+바퀴를 다시 발명reinventing the wheel하는 쓸데없는 노력을 방지할 목적
+▪ 인텔 칩의 성능을 평가할 목적
+
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/da6eafbb-b156-4330-ab50-67e15d5279ba)
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/c22adf30-79ae-4f06-adca-1c7f5cf00bc0)
+
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/d8bf20b9-2b5c-45cf-be97-890b62bd46e5)
+cv2.circle
+중심좌표 반지름 선의 색
