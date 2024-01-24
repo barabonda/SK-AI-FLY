@@ -1,5 +1,6 @@
 # pytorch  
-  
+배운 내용  
+pytorch CNN, VGG,LeNet, Resnet, AlexNet, transformer, word2vector,object detection, OpenCV
 **pytorch와 tencerflow의 차이**  
 동적신경망과 정적신경망
   
