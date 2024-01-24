@@ -77,3 +77,17 @@ CCNN 양방향 풀리커넥티드 한쪽에서는 있냐 없냐 한쪽에서는 
 yolo는 한층에서만 했지만 신뢰도도 평가야하여 보완함
 
 정확도는 faster r-cnn 속도는 yolo
+# transformer 
+인코더 디코더 둘다 존재  
+인코더의 경우 self-attention 사용
+트랜스포머는 입력되는 문장을 순차적으로 처리하지않고 병렬로 한번에 처리  
+때문에 단어 정보와 위치정보를 합해서 처
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/6ffd68e8-9f01-4ce8-8584-ec3ed375c68c)
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/78ea0a36-a194-4df3-b853-793cdcf69e54)  
+gpt는 한단어 한단어 내뱉음  
+때문에 내뱉은 단어가 다시 input되고  
+cross-attention 시작
+a, b, c가 있을 때
+a, c 학습 a,b 학습 a,b,c 학습
+마치 영어단어 외울 때 가리고 하는 것처럼
+학습을 
