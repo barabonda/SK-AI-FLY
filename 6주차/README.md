@@ -109,10 +109,54 @@ vivit
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/da6eafbb-b156-4330-ab50-67e15d5279ba)
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/c22adf30-79ae-4f06-adca-1c7f5cf00bc0)
 
-![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/d8bf20b9-2b5c-45cf-be97-890b62bd46e5)
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/d8bf20b9-2b5c-45cf-be97-890b62bd46e5)  
+```
+import cv2
+import numpy as np
+import random
+
+def find_and_draw_circles():
+    # Create a white background image (640x480)
+    img = np.ones((480, 640, 3), dtype=np.uint8) * 255
+
+    # Generate 5 random circles
+    circles_info = []  # to store circle information (center, radius, color)
+
+    for _ in range(5):
+        center = (random.randint(50, 590), random.randint(50, 430))
+        radius = random.randint(20, 50)
+        color = (random.choice([0, 255]), random.choice([0, 255]), random.choice([0, 255]))
+
+        # Ensure that the circle color is red, blue, or green
+        while color not in [(0, 0, 255), (255, 0, 0), (0, 255, 0)]:
+            color = (random.choice([0, 255]), random.choice([0, 255]), random.choice([0, 255]))
+
+        # Draw the random circle on the image
+        cv2.circle(img, center, radius, color, -1)
+
+        # Store circle information
+        circles_info.append((center, radius, color))
+
+        # Draw rectangles around the detected circles in the original image
+        cv2.rectangle(img, (center[0] - radius, center[1] - radius), 
+                            (center[0] + radius, center[1] + radius), color, 2)
+
+        # Display the color name as text
+        color_name = "Red" if color == (0, 0, 255) else "Blue" if color == (255, 0, 0) else "Green"
+        cv2.putText(img, color_name, (center[0] - radius, center[1] - radius - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1, cv2.LINE_AA)
+
+    # Display the image with rectangles and the result of Hough Circle Transform
+    cv2.imshow('Circles with Rectangles', img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+    return circles_info
+```
 cv2.circle
 중심좌표 반지름 선의 색
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/ad1f727c-ff5b-4704-9471-c9ee07fffb10)  
+
+
 
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/f5b28e8d-54c7-4914-989a-2f4b77cf3d5c)
 특정 hsv에 있는 cv.cvtcolor추출
