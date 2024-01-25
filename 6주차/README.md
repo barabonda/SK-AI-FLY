@@ -112,4 +112,7 @@ vivit
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/d8bf20b9-2b5c-45cf-be97-890b62bd46e5)
 cv2.circle
 중심좌표 반지름 선의 색
-![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/ad1f727c-ff5b-4704-9471-c9ee07fffb10)
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/ad1f727c-ff5b-4704-9471-c9ee07fffb10)  
+
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/f5b28e8d-54c7-4914-989a-2f4b77cf3d5c)
+특정 hsv에 있는 cv.cvtcolor추출
