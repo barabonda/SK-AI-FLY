@@ -160,3 +160,37 @@ cv2.circle
 
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/f5b28e8d-54c7-4914-989a-2f4b77cf3d5c)
 특정 hsv에 있는 cv.cvtcolor추출
+```
+import numpy as np, cv2
+
+image1 = cv2.imread(r".\chap06/images\add1.jpg", cv2.IMREAD_GRAYSCALE)   # 영상 읽기
+image2 = cv2.imread(r".\chap06/images\add2.jpg", cv2.IMREAD_GRAYSCALE)
+if image1 is None or image2 is None: raise Exception("영상 파일 읽기 오류 발생")
+
+# 영상 합성
+alpha, beta = 0.6, 0.7
+add_img3 = cv2.addWeighted(image1, alpha, image2, beta, 0)
+
+numpy_horizontal = np.hstack((image1, add_img3, image2))
+cv2.imshow('dst', numpy_horizontal)
+
+# titles = ['image1','image2','add_img3']
+# for t in titles: cv2.imshow(t, eval(t))
+cv2.waitKey(0)
+```
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/ba342ec9-a6dd-47dc-b6a6-cd685b8fed94)
+
+```
+import cv2
+def onThreshold(value):
+    result = cv2.threshold(image, value, 255, cv2.THRESH_BINARY)[1]
+    cv2.imshow("result", result)
+image = cv2.imread("C:/Users/2022-PC(T)-10/Desktop/SKAIFLY/opencv/chap06/images/color_space2.jpg", cv2.IMREAD_GRAYSCALE) # 컬러 영상 읽기
+if image is None: raise Exception("영상 파일 읽기 오류")
+cv2.namedWindow("result")
+cv2.createTrackbar("threshold", "result", 128, 255, onThreshold)
+onThreshold(128) # 이진화 수행
+cv2.imshow("image", image)
+cv2.waitKey(0)
+```
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/9b85ea7a-4c92-4bfe-b120-5b0e9e2a8feb)
