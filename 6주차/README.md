@@ -384,3 +384,43 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/80f6f5c6-506d-41ae-aa0a-a6a1c7f98019)
+
+
+```
+import numpy as np, cv2
+
+
+def salt_pepper_noise(img, n):
+    h, w = img.shape[:2]
+    x, y = np.random.randint(0, w, n), np.random.randint(0, h, n)
+    noise = img.copy()
+    for (x,y) in zip(x,y):
+        noise[y, x] = 0 if np.random.rand() < 0.5 else 255
+    return noise
+
+
+image = cv2.imread("./chap07/images/median2.jpg", cv2.IMREAD_GRAYSCALE)
+if image is None: raise Exception("영상파일 읽기 오류")
+    
+noise = salt_pepper_noise(image, 500)
+
+data = [0, 1, 0, 
+        1, 1, 1,
+        0, 1, 0]
+mask = np.array(data, np.uint8).reshape(3, 3)
+th_img = cv2.threshold(noise, 128, 255, cv2.THRESH_BINARY)[1] 
+erode = cv2.erode(th_img, mask)
+mask = np.array([[0, 1, 0], 
+                [1, 1, 1],
+                [0, 1, 0]]).astype("uint8")
+th_img = cv2.threshold(noise, 128, 255, cv2.THRESH_BINARY)[1]
+dilate = cv2.morphologyEx(th_img, cv2.MORPH_DILATE, mask)
+
+cv2.imshow("image", image),
+cv2.imshow("noise", noise),
+cv2.imshow("erode", erode),
+cv2.imshow("dilate",dilate)
+cv2.waitKey(0)
+```
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/25b37b7c-a99d-40ec-aaac-8af177f84518)
+
