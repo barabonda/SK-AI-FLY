@@ -344,3 +344,43 @@ text = GetOCR()             #OCR함수로 텍스트 추출
 print(text)                 #텍스트 출력
 ```
 점찍고 가우시안블
+```
+import cv2
+import numpy as np
+
+def canny_edge_detection(image, low_threshold, high_threshold):
+    
+    blurred = cv2.GaussianBlur(image, (5, 5), 0)
+    edges = cv2.Canny(blurred, low_threshold, high_threshold)
+    
+    return edges
+
+def update_thresholds_low(value):
+    global low_threshold
+    low_threshold = value
+    update_edges()
+
+def update_thresholds_high(value):
+    global high_threshold
+    high_threshold = value
+    update_edges()
+
+def update_edges():
+    edges = canny_edge_detection(image, low_threshold, high_threshold)
+    cv2.imshow("Canny Edges", edges)
+
+image = cv2.imread("images/canny.jpg", cv2.IMREAD_GRAYSCALE)
+
+low_threshold = 50
+high_threshold = 150
+
+
+cv2.namedWindow("Canny Edges")
+cv2.createTrackbar("Low Threshold", "Canny Edges", low_threshold, 255, update_thresholds_low)
+cv2.createTrackbar("High Threshold", "Canny Edges", high_threshold, 255, update_thresholds_high)
+
+update_edges()
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/80f6f5c6-506d-41ae-aa0a-a6a1c7f98019)
