@@ -44,5 +44,5 @@ if button_click:
         st.write(result.choices[0].message.content)
         st.success("done!")
 ```
-## 웹페이즈 생성완료
+## 웹페이지 생성완료
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/d5749a71-2be6-4353-a14c-94cdcb78cf46)
