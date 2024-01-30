@@ -47,6 +47,15 @@ if button_click:
 ## 웹페이지 생성완료
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/d5749a71-2be6-4353-a14c-94cdcb78cf46)
 
+1. 대화형 모델
+2. 완성형 모델
+3. embedding 모델
+
+   다 만들어보기
 # Lengchain기반 Few-shotlearning으로 gpt-3.5 삼행시 시키기  
 
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/4610eb4f-a170-4203-859d-4351e3c868a3)
+
+오늘 쓸 모
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/41c49469-480c-42a2-aeb9-6bd7d4adece1)
+
