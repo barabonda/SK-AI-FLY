@@ -46,3 +46,7 @@ if button_click:
 ```
 ## 웹페이지 생성완료
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/d5749a71-2be6-4353-a14c-94cdcb78cf46)
+
+# Lengchain기반 Few-shotlearning으로 gpt-3.5 삼행시 시키기  
+
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/4610eb4f-a170-4203-859d-4351e3c868a3)
