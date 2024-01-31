@@ -68,3 +68,11 @@ PDF -> Vector database -> LLM -> answer
 포트폴리오를 만드는 것 추천 * 숙제
 대신 여기에 배포할때는 requirements.txt 도 같이 배포해야함
 하나의 컨테이너이기 때문
+
+문장을 잘게 쪼개고 남아있느니 것 토큰과 토크나이징(토큰마다 의미 분석) 형태소 꼬꼬ㅓ마 서울대 ids연구실 한국어 형태소 분석기
+morphs
+nouns
+pos
+sentences  
+문장이 길면 문장단위로 리스트로 넘겨받는다
+colab 실습
