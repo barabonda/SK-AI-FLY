@@ -78,7 +78,7 @@ sentences
 # colab 실습  
 제주도 방언을 형태소에 돌렸더니 잘되지않는다 그래서 메모장에 방언 별로 품사를 지정해주고  
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/a8dd8872-4337-45ae-958b-4968280406be)
-이 정보를 기반으로 실행을 해보니까 제대로 분류가 되었다.  
+이 정보를 기반으로 실행을 해보니까 다음과 같이 제대로 분류가 되었다.  
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/48094fa1-539e-40c7-95d0-c102d3d3c48d)
 [참고자료]
 - https://docs.komoran.kr/firststep/postypes.html
