@@ -58,8 +58,12 @@ if button_click:
 
 오늘 쓸 모
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/41c49469-480c-42a2-aeb9-6bd7d4adece1)
+PDF -> Vector database -> LLM -> answer
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/4fb73ba6-cdfe-4961-9e7b-b42ed4ef1237)
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/6245c9d1-fb7f-4479-9e3d-82f98ac1d14e)
 
-Community Cloud 이건 github와 연동해서 하나의 웹사이트를 올릴 수 있음
+**Community Cloud**  
+이건 github와 연동해서 하나의 웹사이트를 올릴 수 있음
 그말인 즉슨 깃허브에 소스코드가 업데이트가 되면 여기도 같이 업데이트 됌
 포트폴리오를 만드는 것 추천 * 숙제
 대신 여기에 배포할때는 requirements.txt 도 같이 배포해야함
