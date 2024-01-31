@@ -59,3 +59,8 @@ if button_click:
 오늘 쓸 모
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/41c49469-480c-42a2-aeb9-6bd7d4adece1)
 
+Community Cloud 이건 github와 연동해서 하나의 웹사이트를 올릴 수 있음
+그말인 즉슨 깃허브에 소스코드가 업데이트가 되면 여기도 같이 업데이트 됌
+포트폴리오를 만드는 것 추천 * 숙제
+대신 여기에 배포할때는 requirements.txt 도 같이 배포해야함
+하나의 컨테이너이기 때문
