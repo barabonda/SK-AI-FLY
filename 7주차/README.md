@@ -75,4 +75,12 @@ nouns
 pos
 sentences  
 문장이 길면 문장단위로 리스트로 넘겨받는다
-colab 실습
+colab 실습  
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/48094fa1-539e-40c7-95d0-c102d3d3c48d)
+제주도 방언을 형태소에 돌렸더니 잘되지않는다 그래서 메모장에 방언 별로 품사를 지정해주고
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/a8dd8872-4337-45ae-958b-4968280406be)
+이 정보를 기반으로 실행을 해보니까 제대로 분류가 될 수 있다.  
+[참고자료]
+- https://docs.komoran.kr/firststep/postypes.html
+- http://www.jejuda114.com/%EC%9E%AC%EB%B0%8C%EB%8A%94-%EC%A0%9C%EC%A3%BC-%EB%B0%A9%EC%96%B8%EC%9D%84-%EB%B0%B0%EC%9B%8C%EB%B3%BC%EA%B9%8C%EC%9A%94/
+
