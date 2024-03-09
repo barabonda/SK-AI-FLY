@@ -1,13 +1,13 @@
 # SK-FLY-AI-Challenger 4기(400시간) 수료
 2023.12.18~2024.2.29
-![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/e3c3e57d-e885-4d44-b831-7384fdd5dd52)
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/e3c3e57d-e885-4d44-b831-7384fdd5dd52)  
 매일매일이 해커톤이었다..  
 
 2달반 가량 진행한 AI 부트캠프
 같은 분야에서 공부하는 사람들과 많은 것을 보고 느끼고 배운 소중한 순간들을 잊지앉기위해
 1주차부터 기록
 
-**Curriculum**
+### **Curriculum**
 
 1. 빅데이터분석
 2. AI프로그래밍
