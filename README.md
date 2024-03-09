@@ -1,4 +1,4 @@
-# SK-FLY-AI-Challenger 4기(400시간) 수료
+# SK-FLY-AI-Challenger 4기(400시간+a) 수료
 2023.12.18~2024.2.29
 ![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/e3c3e57d-e885-4d44-b831-7384fdd5dd52)  
 매일매일이 해커톤이었다..  
