@@ -6,7 +6,6 @@
 2달반 가량 진행한 AI 부트캠프
 같은 분야에서 공부하는 사람들과 많은 것을 보고 느끼고 배운 소중한 순간들을 잊지앉기위해
 1주차부터 기록
-![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/42f003f9-ea14-4c70-b616-04766c82845f)
 
 **Curriculum**
 
@@ -18,3 +17,4 @@
 6. 컨테이너 인프라환경구축
 7. 클라우드 서비스
 8. Langchain을 활용한 챗봇
+![image](https://github.com/barabonda/SK-AI-FLY/assets/108683454/42f003f9-ea14-4c70-b616-04766c82845f)
